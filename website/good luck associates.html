@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodluck Associates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            background-image: url('background image.png');
+            /* Ensure this file is in same folder */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 64, 128, 0.85);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .contact {
+            background-color: rgba(230, 240, 255, 0.95);
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: rgba(0, 64, 128, 0.85);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .advisor {
+            text-align: center;
+        }
+
+        .advisor img {
+            max-width: 250px;
+            width: 100%;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+        }
+
+        .advisor p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #004080;
+        }
+
+        /* Contact section layout */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .address {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .map {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .map a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .map a:hover {
+            background-color: #0066cc;
+        }
+
+        /* Review section */
+        .review {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 5px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .stars span {
+            color: #ccc;
+        }
+
+        .stars span.selected {
+            color: gold;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Goodluck Associates</h1>
+        <p>Your trusted partner in legal and paperwork solutions</p>
+    </header>
+
+    <section>
+        <h2>Work Portfolio</h2>
+        <div class="columns">
+            <div>
+                <h3>Authority Work</h3>
+                <ul>
+                    <li>Noida Authority approvals</li>
+                    <li>Government liaison</li>
+                    <li>Compliance documentation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Liaisoning Work</h3>
+                <ul>
+                    <li>Coordination with departments</li>
+                    <li>Project clearances</li>
+                    <li>Client representation</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Paper Work</h3>
+                <ul>
+                    <li>Legal documentation</li>
+                    <li>Property registration</li>
+                    <li>Contract drafting</li>
+                    <li>TM Work</li>
+                    <li>Mortgage assistance</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Property Dealer</h3>
+                <ul>
+                    <li>Residential property deals</li>
+                    <li>Commercial property deals</li>
+                    <li>Rental agreements</li>
+                    <li>Property consultation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="advisor">
+        <h2>Legal Advisor</h2>
+        <img src="advisor.png" alt="Mr. Mahendra Pratap">
+        <p>Mr. Mahendra Pratap<br>Legal Advisor</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact & Office Info</h2>
+        <div class="contact-container">
+            <div class="address">
+                <p><strong>Office Address:</strong><br>
+                    Office Shop No. 12, 17, 18<br>
+                    UPFC Building, Noida Authority Campus<br>
+                    Sector 6, Noida – 201301
+                </p>
+
+                <p><strong>Phone Numbers:</strong><br>
+                    📞 <a href="tel:9811884898">9811884898</a><br>
+                    📞 <a href="tel:8178932967">8178932967</a><br>
+                    📞 <a href="tel:9811885898">9811885898</a>
+                </p>
+
+                <p><strong>Email:</strong><br>
+                    <a href="mailto:goodluckssociate@gimail.com">goodluckssociate@gimail.com</a>
+                </p>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps?q=OGood Luck, Associates, Noida, ground floor, UPFC building, sector 6 Noida authority campus shop no 12, near Sachdeva Photosta, Noida, Uttar Pradesh 20130&output=embed"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Office+Shop+No.+12,+17,+18,+UPFC+Building,+Noida+Authority+Campus,+Sector+6,+Noida+201301"
+                    target="_blank">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <h2>Leave a Review</h2>
+        <div class="stars" id="stars">
+            <span data-value="1">&#9733;</span>
+            <span data-value="2">&#9733;</span>
+            <span data-value="3">&#9733;</span>
+            <span data-value="4">&#9733;</span>
+            <span data-value="5">&#9733;</span>
+        </div>
+        <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+        <p id="output"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Goodluck Associates. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const stars = document.querySelectorAll('#stars span');
+        let rating = 0;
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                rating = star.getAttribute('data-value');
+                stars.forEach(s => s.classList.remove('selected'));
+                for (let i = 0; i < rating; i++) {
+                    stars[i].classList.add('selected');
+                }
+            });
+        });
+
+        function submitReview() {
+            const text = document.getElementById('reviewText').value;
+            const output = document.getElementById('output');
+
+            if (rating === 0 || text.trim() === "") {
+                output.innerHTML = "⚠️ Please select a star rating and write a review before submitting.";
+                output.style.color = "red";
+            } else {
+                output.innerHTML = `✅ Thank you for your review!<br>
+        <strong>Rating:</strong> ${rating} star(s)<br>
+        <strong>Review:</strong> ${text}`;
+                output.style.color = "green";
+            }
+        }
+    </script>
